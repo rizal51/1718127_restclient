@@ -16,7 +16,7 @@ class Test_api extends CI_Controller {
 
 			if($data_action == "Delete")
 			{
-				$api_url = "http://localhost/1718127_restclient/api/delete";
+				$api_url = "http://localhost/1718127_rest_client/api/delete";
 
 				$form_data = array(
 					'id'		=>	$this->input->post('user_id')
@@ -39,7 +39,7 @@ class Test_api extends CI_Controller {
 
 			if($data_action == "Edit")
 			{
-				$api_url = "http://localhost/1718127_restclient/api/update";
+				$api_url = "http://localhost/1718127_rest_client/api/update";
 
 				$form_data = array(
 					'id'			=>	$this->input->post('user_id'),
@@ -67,7 +67,7 @@ class Test_api extends CI_Controller {
 
 			if($data_action == "fetch_single")
 			{
-				$api_url = "http://localhost/1718127_restclient/api/fetch_single";
+				$api_url = "http://localhost/1718127_rest_client/api/fetch_single";
 
 				$form_data = array(
 					'id'		=>	$this->input->post('user_id')
@@ -90,7 +90,7 @@ class Test_api extends CI_Controller {
 
 			if($data_action == "Insert")
 			{
-				$api_url = "http://localhost/1718127_restclient/api/insert";
+				$api_url = "http://localhost/1718127_rest_client/api/insert";
 				$form_data = array(
 					'id'			=>	$this->input->post('user_id'),
 					'nama_pel'		=>	$this->input->post('nama_pel'),
@@ -116,7 +116,7 @@ class Test_api extends CI_Controller {
 
 			if($data_action == "fetch_all")
 			{
-				$api_url = "http://localhost/1718127_restclient/api";
+				$api_url = "http://localhost/1718127_rest_client/api";
 
 				$client = curl_init($api_url);
 
